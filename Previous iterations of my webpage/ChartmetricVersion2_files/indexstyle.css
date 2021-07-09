@@ -1,0 +1,48 @@
+.programmedcontent{
+    background-color: #8DC3B2;
+    border-width: medium;
+    margin: 25px 50px 25px 50px;
+    display: grid;
+    grid-template-columns: 15px 10% 15px 80%;
+    grid-template-rows: 30% 40% 30%;
+    align-items: center;
+    padding: 15px;
+}
+#profilepic{
+    grid-column: 2 / 2;
+    grid-row: 1 / span 3;
+}
+#followers{
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    align-self: center;
+}
+#username{
+    text-align: left;
+    align-self: flex-end;
+    color: white;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+#content{
+    align-items: center;
+}
+#description{
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    align-items: center;    
+}
+h1 {
+    text-align: center;
+    background-color: #C38D9E;
+    color: white;
+}
+body{
+    background-color: #C38D9E;
+}

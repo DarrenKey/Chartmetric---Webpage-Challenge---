@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    background-color: #8d9ec3;
+    color: white;
+}
+body{
+    background-color: #8d9ec3;
+}
+#programmedcontent{
+    background-color: #8DC3B2;
+    color: #05386B;
+    margin: 25px;
+    padding: 10px;
+}
+h6{
+    white-space: pre-line;
+}
+#sorted{
+    margin-right: 20px;
+    text-align: right;
+}
+#home{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+img{
+    height: 600px;
+    object-fit: contain;
+    padding: 10px;
+    align-self: center;
+}
+#photo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}

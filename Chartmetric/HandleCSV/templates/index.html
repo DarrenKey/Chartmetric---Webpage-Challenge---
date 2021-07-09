@@ -1,0 +1,24 @@
+{% extends "indexbase.html" %}
+{% block content %}
+{% for key, value in dict.items %}
+    <div class = "programmedcontent" >
+        <div id = "profilepic" style="cursor: pointer;" onclick="window.location='{% url 'recentposts' value.user_profile.username %}';">
+            <img src = {{ value.user_profile.picture }} alt = "Profile picture"></div>
+    
+        <div id = "username" style="cursor: pointer;" onclick="window.location='{% url 'recentposts' value.user_profile.username %}';">
+            <h3>{{ value.user_profile.username }}</h3></div>
+        <!-- <<a href =  {{ value.user_profile.url }}> Profile Link</a> -->
+
+        <div id = "description">
+            <h6>{{ value.user_profile.description }}</h6></div>
+
+        <div id = "followers">
+            <h6><i class="bi-people"></i> {{ followers | get_item:key }}</h6>
+            </div>
+        
+        <div id = "stats" style="cursor: pointer;" onclick="window.location='{% url 'stats' value.user_profile.username %}';">
+            <i class="bi bi-bar-chart-line"></i>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

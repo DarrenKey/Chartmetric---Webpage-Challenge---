@@ -1,0 +1,16 @@
+#chart_div{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #8d9ec3
+}
+body{
+    background-color: #8d9ec3;
+}
+.chart_box {
+  width: 900px;
+  margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: white;
+}

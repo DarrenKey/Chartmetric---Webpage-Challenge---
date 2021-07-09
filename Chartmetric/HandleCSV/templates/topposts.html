@@ -1,0 +1,22 @@
+{% extends "postsbase.html" %}
+{% block content %}
+
+<h1> <div id = "home"><a href = "{% url 'index' %}"><i class="bi-house-door-fill"></i></a></div>TOP POSTS</h1>
+
+
+<div id = "sorted"><h5> Sort by: <a href = "{% url 'topposts' username %}" style="text-decoration: none;">Top Posts</a> | <a href = "{% url 'recentposts' username %}"style="text-decoration: none;">Recent Posts</a> | <a href = "{% url 'commercialposts' username %}"style="text-decoration: none;">Commercial Posts</a></h5></div>
+
+<div id="content">
+{% for post in toppost %}
+    <div id = "programmedcontent">
+        {% if post.image %}
+            <div id = "photo">
+                <img src = {{post.image }}></div>
+        {% endif %}
+    
+        <div id = "text">
+            <h6>{{ post.text }}</h6></div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
