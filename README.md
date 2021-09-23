@@ -43,9 +43,9 @@ Audience_Commenters: http://protected-ocean-96638.herokuapp.com/api/[USERID/USER
 
 
 ## Extra: 
-http://protected-ocean-96638.herokuapp.com/api/[USERID/USERNAME]/extra/ \
+http://protected-ocean-96638.herokuapp.com/api/[USERID/USERNAME]/extra/ 
 
-Example command to retrieve JSON data of a user's report_info: \
+Example command to retrieve JSON data of a user's report_info: 
 ```
 curl http://protected-ocean-96638.herokuapp.com/api/55165562/reportinfo/
 ```
